@@ -1,0 +1,132 @@
+@media (max-width: 767px) {
+    .header{
+        position: relative;
+        &__logo img {
+            width: 180px;
+            margin-left: 15px;
+        }
+        &__official {
+            position: absolute;
+            left: 255px;
+            font-size: 10px;
+        }
+        &__official span {
+            font-size: 10px;
+        }
+        &__phone {
+            font-size: 14px;
+            margin-right: 15px;
+        }
+    }
+    .promo{
+        background-position-x: 25%;
+        &__header {
+            font-size: 27px;
+            margin-right: 15px;
+        }
+        &__icons {
+            width: 375px;
+        }
+        &__subheader {
+            font-size: 16px;
+            margin-right: 15px;
+        }
+        &__icon {
+            width: 92px;
+            font-size: 12px;
+        }
+        &__link {
+            font-size: 14px;
+            margin-right: 15px;
+        }
+    }
+    .button {
+        width: 130px;
+        margin-right: 15px;
+        &_main {
+            width: 260px;
+            margin-right: 15px;
+        }
+    }
+    .benefits {
+        &__header{
+           font-size: 26px; 
+        }
+        &__item {
+            width: 180px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .header {
+        &__logo img {
+            width: 170px;
+        }
+        &__contacts {
+            position: absolute;
+            top: 40px;
+            margin-left: 15px;
+        }
+        &__official {
+            top: 0px;
+            right: 20px;
+            font-size: 14px;
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    .promo {
+        width: 115%;
+        padding-top: 5px;
+        position: relative;
+        &__header {
+            font-size: 24px;
+            margin-right: 43px;
+        }
+        &__subheader {
+            font-size: 15px;
+            margin-right: 35px;
+        }
+        &__icons {
+            justify-content: space-around;
+            margin-right: 10px;
+        }
+        &__link {
+            font-size: 13px;
+            margin-right: 25px;
+        }
+    }
+    .button{
+        &_main {
+            width: 175px;
+            font-size: 12px;
+            margin-right: 25px;
+        }
+    }
+    .benefits {
+        width: 115%;
+        padding-top: 30px;
+        &__header {
+            font-size: 23px;
+            margin-left: 0px;
+        }
+       &__wrapper {
+           flex-direction: column;
+           align-items: center;
+           margin-top: 10px;
+       } 
+       &__item {
+           margin-top: 20px;
+       }
+       &__subheader {
+           margin-top: 8px;
+       }
+       &__text {
+           margin-top: 13px;
+           font-size: 12px;
+       }
+    }
+}
