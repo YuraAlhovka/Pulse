@@ -6,6 +6,12 @@
     max-width: 950px;
     margin: 0 auto;
 }
+.body {
+    .stop-scrolling {
+        height: 100%;
+        overflow: hidden;
+      }
+}
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
@@ -13,4 +19,5 @@
 @import 'blocks/consultation';
 @import 'blocks/titles';
 @import 'blocks/forms';
+@import 'blocks/carousel';
 @import 'base/media';

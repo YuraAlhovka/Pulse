@@ -130,3 +130,44 @@
        }
     }
 }
+
+@media (max-width: 991px) {
+    .title_left {
+        font-size: 22px;
+        margin-left: 40px;
+    }
+    .consultation {
+        &__descr {
+            font-size: 16px;
+            margin-left: 40px;
+        }
+    }
+    .feed-form {
+        width: 200px;
+        margin-left: 40px;
+        input {
+            font-size: 13px;
+        }
+    }
+    .button_submit {
+        font-size: 13px;
+    }
+}
+@media (max-width: 767px) {
+    .title_left {
+        font-size: 18px;
+}
+    .consultation {
+        &__descr {
+            font-size: 16px;
+        }
+    }
+    .feed-form {
+        width: 160px;
+    }
+}
+@media (max-width: 575px) {
+    .consultation {
+        width: 115%;
+    }
+}
