@@ -4,6 +4,11 @@
         position: relative;
         width: 750px;
         margin: 0 auto;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
     .slick-prev, .slick-next {
         position: absolute;
@@ -21,4 +26,16 @@
         right: -66px;
         left: auto;
     }
+}
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    button {
+        color: transparent;
+        border: none;
+        margin-right: 75px;
+        }
+}
+.slick-active {
+    color: $main-color;
 }

@@ -79,7 +79,6 @@
         }
     }
     .promo {
-        width: 115%;
         padding-top: 5px;
         position: relative;
         &__header {
@@ -107,7 +106,6 @@
         }
     }
     .benefits {
-        width: 115%;
         padding-top: 30px;
         &__header {
             font-size: 23px;
@@ -166,8 +164,40 @@
         width: 160px;
     }
 }
-@media (max-width: 575px) {
-    .consultation {
-        width: 115%;
+
+@media (max-width: 991px) {
+    .carousel {
+        padding: 50px 0;
+        &__inner {
+            max-width: 100%;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
     }
+}
+@media (max-width: 390px) {
+    .header {
+        &__official {
+            width: 30px;
+            left: 210px;
+            top: 0px;
+
+        }
+    }
+    .promo {
+        &__icons {
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__header {
+            text-align: right;
+            margin-top: 20px;
+        }
+        &__subheader {
+            text-align: right;
+        }
+    }
+
 }
