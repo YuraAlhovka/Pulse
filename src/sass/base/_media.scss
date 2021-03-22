@@ -176,6 +176,16 @@
             }
         }
     }
+    .slick-dots {
+        list-style-type: none;
+        button {
+            background-color:grey;
+            border-radius: 50%;
+            &:active {
+                background-color: $main-color;
+            }
+        }
+    }
 }
 @media (max-width: 390px) {
     .header {
@@ -200,4 +210,9 @@
         }
     }
 
+}
+@media (max-width: 720px) {
+    .slick-track {
+        right: 0;
+    }
 }
