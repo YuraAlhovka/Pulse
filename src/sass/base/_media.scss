@@ -1,3 +1,54 @@
+
+@media (max-width: 991px) {
+    .title_left {
+        font-size: 22px;
+        margin-left: 40px;
+    }
+    .consultation {
+        &__descr {
+            font-size: 16px;
+            margin-left: 40px;
+        }
+    }
+    .feed-form {
+        width: 200px;
+        margin-left: 40px;
+        input {
+            font-size: 13px;
+        }
+    }
+    .button_submit {
+        font-size: 13px;
+    }
+    .carousel {
+        padding: 50px 0;
+        &__inner {
+            max-width: 100%;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    .slick-dots {
+        list-style-type: none;
+        button {
+            width: 10px;
+            height: 10px;
+            background-color:grey;
+            border-radius: 100%;
+            &:active {
+                background-color: $main-color;
+            }
+        }
+    }
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .header{
         position: relative;
@@ -58,7 +109,37 @@
             margin-right: 15px;
         }
     }
+    .title_left {
+        font-size: 18px;
+    }
+    .consultation {
+        &__descr {
+            font-size: 16px;
+        }
+    }
+    .feed-form {
+        width: 160px;
+    }
+    .catalog {
+        &__tab {
+            width: 175px;
+            font-size: 17px;
+        }
+        &__tabs {
+            margin-top: 40px;
+        }
+        &-item {
+            width: 260px;
+        }
+        &__content {
+            margin-top: 40px;
+        }
+        .title {
+            font-size: 26px;
+        }
+    }
 }
+
 @media (max-width: 575px) {
     .header {
         &__logo img {
@@ -127,66 +208,26 @@
            font-size: 12px;
        }
     }
-}
-
-@media (max-width: 991px) {
-    .title_left {
-        font-size: 22px;
-        margin-left: 40px;
-    }
-    .consultation {
-        &__descr {
-            font-size: 16px;
-            margin-left: 40px;
-        }
-    }
-    .feed-form {
-        width: 200px;
-        margin-left: 40px;
-        input {
-            font-size: 13px;
-        }
-    }
-    .button_submit {
-        font-size: 13px;
-    }
-}
-@media (max-width: 767px) {
-    .title_left {
-        font-size: 18px;
-}
-    .consultation {
-        &__descr {
-            font-size: 16px;
-        }
-    }
-    .feed-form {
-        width: 160px;
-    }
-}
-
-@media (max-width: 991px) {
-    .carousel {
-        padding: 50px 0;
-        &__inner {
-            max-width: 100%;
-            img {
-                display: block;
-                margin: 0 auto;
-            }
-        }
-    }
     .slick-dots {
-        list-style-type: none;
-        button {
-            background-color:grey;
-            border-radius: 50%;
-            &:active {
-                background-color: $main-color;
-            }
+        margin-left: 40px;
+        li {
+            width: 75px;
+        }
+    }
+    .catalog {
+        .title {
+            font-size: 19px;
+        }
+        &__tab {
+            font-size: 10px;
+            width: 92px;
+        }
+        &__tabs {
+            margin-top: 30px;
         }
     }
 }
+
 @media (max-width: 390px) {
     .header {
         &__official {
@@ -209,10 +250,11 @@
             text-align: right;
         }
     }
-
 }
-@media (max-width: 720px) {
-    .slick-track {
-        right: 0;
+
+@media (max-width: 340px) {
+    .carousel {
+        width: 90%;
+        padding-left: 40px;
     }
 }
