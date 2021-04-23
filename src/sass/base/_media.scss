@@ -43,9 +43,24 @@
         }
     }
     .catalog {
+        padding-bottom: 60px;
         &__content {
             justify-content: space-around;
         }
+    }
+    .reviews {
+        &__client{
+            margin-top: 60px;
+            &-img{
+                margin-left: 30px;
+            }
+            &:nth-child(2) {
+                margin-top: 45px;
+            }
+            &-review {
+                font-size: 14px;
+            }
+        }    
     }
 }
 
@@ -138,6 +153,28 @@
             font-size: 26px;
         }
     }
+    .reviews {
+        .title {
+            font-size: 26px;
+        }
+        &__client{
+            margin-top: 45px;
+            &-img{
+                margin-left: 30px;
+                width: 150px;
+                height: 150px;
+            }
+            &:nth-child(2) {
+                margin-top: 40px;
+            }
+            &-review {
+                font-size: 13px;
+            }
+            &-result {
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -188,6 +225,9 @@
     }
     .benefits {
         padding-top: 30px;
+        .title {
+            font-size: 23px;
+        }
         &__header {
             font-size: 23px;
             margin-left: 0px;
@@ -215,15 +255,91 @@
         }
     }
     .catalog {
+        padding-bottom: 30px;
+        &__content {
+            margin-top: 20px;
+        }
         .title {
-            font-size: 19px;
+            font-size: 23px;
+            text-align: center;
         }
         &__tab {
             font-size: 10px;
             width: 92px;
         }
         &__tabs {
-            margin-top: 30px;
+            margin-top: 15px;
+        }
+        &-item {
+            width: 240px;
+            min-height: 380px;
+            &__img {
+                width: 150px;
+                height: 180px;
+            }
+            &__subtitle {
+                font-size: 14px;
+                margin-top: 12px;
+            }
+            &__descr {
+                font-size: 11px;
+                margin-top: 8px;
+            }
+            &__link {
+                font-size: 11px;
+                margin-top: 10px;
+            }
+            &__old-price {
+                font-size: 11px;
+            }
+            &__price {
+                font-size: 13px;
+            }
+            hr {
+                margin-top: -36px;
+                margin-bottom: 10px;
+            }
+            .button_mini {
+                width: 90px;
+                height: 30px;
+                font-size: 13px;
+            }
+        }
+    }
+    .reviews {
+        .title {
+            font-size: 23px;
+            text-align: center;
+        }
+        &__descr {
+            padding-right: 0;
+            margin-left: 30px;
+        }
+        &__client{
+            width: 300px;
+            margin-top: 35px;
+            flex-direction: column;
+            &-name {
+                font-size: 17px;
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            &-img{
+                margin: 0 auto;
+                width: 125px;
+                height: 125px;
+            }
+            &:nth-child(2) {
+                margin-top: 30px;
+            }
+            &-review {
+                font-size: 12px;
+            }
+            &-result {
+                margin-bottom: 10px;
+                text-align: center;
+            }
         }
     }
 }
